@@ -1,0 +1,138 @@
+.home { overflow: clip; background: var(--color-ivory); }
+.hero { position: relative; display: flex; min-height: min(900px, 100svh); align-items: center; overflow: hidden; background: #241413; color: var(--color-ivory); }
+.heroImage, .heroShade { position: absolute; inset: 0; }
+.heroImage { inset: -7% 0; }
+.heroImage img { object-fit: cover; object-position: center 54%; opacity: .83; }
+.heroShade { background: linear-gradient(90deg, rgba(20,10,10,.88) 0%, rgba(20,10,10,.62) 44%, rgba(20,10,10,.08) 100%), linear-gradient(0deg, rgba(20,10,10,.62), transparent 28%); }
+.heroContent { position: relative; z-index: 2; width: min(100% - 3rem, 1440px); margin: 3rem auto 4rem; }
+.heroEyebrow, .reservationEyebrow { display: flex; align-items: center; gap: .75rem; margin: 0 0 2.2rem; color: var(--color-orange-light); font-size: .65rem; font-weight: 700; letter-spacing: .2em; }
+.heroEyebrow span { width: 28px; height: 1px; background: var(--color-orange-light); }
+.heroTitle { margin: 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(5.5rem, 11.6vw, 11.3rem); font-weight: 400; letter-spacing: -.075em; line-height: .76; }
+.heroTitle em { color: var(--color-orange-light); font-weight: 400; }
+.heroDescription { max-width: 380px; margin: 2.5rem 0 0; color: rgba(244,239,230,.77); font-size: .93rem; line-height: 1.85; }
+.heroActions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.8rem; margin-top: 2rem; }
+.lightButton { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 1.2rem; padding: 0 1.35rem; background: var(--color-ivory); color: var(--color-ink); font-size: .74rem; transition: background 200ms ease, color 200ms ease; }
+.lightButton:hover { background: var(--color-orange-light); }
+.textButton, .lightTextLink { display: inline-flex; align-items: center; gap: .7rem; color: var(--color-ivory); font-size: .74rem; }
+.textButton:hover, .lightTextLink:hover { color: var(--color-orange-light); }
+.heroBottom { position: absolute; z-index: 2; right: max(1.5rem, calc((100vw - 1440px)/2)); bottom: 2rem; left: max(1.5rem, calc((100vw - 1440px)/2)); display: flex; align-items: center; justify-content: space-between; color: rgba(244,239,230,.62); font-size: .57rem; letter-spacing: .15em; }
+.heroBottom a { display: inline-flex; align-items: center; gap: .65rem; color: var(--color-ivory); }
+.heroVertical { position: absolute; z-index: 2; top: 50%; right: 1.5rem; color: rgba(244,239,230,.65); font-size: .55rem; letter-spacing: .2em; writing-mode: vertical-rl; }
+.intro { padding: 7.5rem max(1.5rem, calc((100vw - 1320px)/2)) 7rem; }
+.introTop { display: flex; align-items: center; justify-content: space-between; }
+.introIndex { margin: 0; color: var(--color-muted); font-size: .58rem; letter-spacing: .16em; }
+.introGrid { display: grid; grid-template-columns: 1.25fr .75fr; align-items: end; gap: 5rem; padding: 4rem 0 5rem; }
+.introHeading h2 { margin: 0; font-size: clamp(4rem, 7.6vw, 8rem); }
+.introHeading h2 em, .signatureHeader h2 em, .experienceHeader h2 em { color: var(--color-burgundy); font-weight: 400; }
+.introCopy { max-width: 410px; padding-bottom: .6rem; }
+.introCopy p, .signatureAside p { margin: 0 0 1.1rem; color: #6e6259; font-size: .88rem; line-height: 1.9; }
+.underlinedLink, .darkLink { display: inline-flex; align-items: center; gap: .7rem; margin-top: 1rem; padding-bottom: .55rem; border-bottom: 1px solid var(--color-burgundy); color: var(--color-burgundy); font-size: .73rem; }
+.introImageWrap { position: relative; height: clamp(340px, 52vw, 650px); overflow: hidden; background: var(--color-sand); }
+.introImageWrap img { object-fit: cover; object-position: center 55%; }
+.imageCaption { position: absolute; right: 1.5rem; bottom: 1.4rem; left: 1.5rem; display: flex; justify-content: space-between; color: white; font-size: .57rem; letter-spacing: .15em; text-shadow: 0 1px 8px rgba(0,0,0,.6); }
+.signature { padding: 7rem max(1.5rem, calc((100vw - 1320px)/2)) 7.5rem; background: #e9dfd2; }
+.signatureHeader { display: flex; align-items: end; justify-content: space-between; gap: 3rem; margin-bottom: 3.5rem; }
+.signatureHeader h2 { margin: 1.4rem 0 0; font-size: clamp(4rem, 7vw, 7rem); }
+.signatureAside { max-width: 350px; padding-bottom: .5rem; }
+.dishGrid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.5rem; }
+.dishCard { min-width: 0; }
+.dishImage { position: relative; display: block; aspect-ratio: .88; overflow: hidden; background: #d1c2b1; }
+.dishImage img, .momentImage img { object-fit: cover; transition: transform 700ms var(--ease-out); }
+.dishImage:hover img { transform: scale(1.055); }
+.dishNumber { position: absolute; top: 1rem; left: 1rem; color: white; font-size: .65rem; letter-spacing: .12em; }
+.dishArrow { position: absolute; right: 1rem; bottom: 1rem; display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: var(--color-ivory); color: var(--color-ink); transition: background 180ms ease, transform 180ms ease; }
+.dishImage:hover .dishArrow { transform: rotate(45deg); background: var(--color-orange-light); }
+.dishMeta { display: flex; justify-content: space-between; gap: .5rem; margin-top: 1.3rem; color: var(--color-burgundy); font-size: .57rem; font-weight: 700; letter-spacing: .13em; }
+.dishCard h3 { margin: .65rem 0 .3rem; font-family: var(--font-display), Georgia, serif; font-size: clamp(1.55rem, 2.4vw, 2.2rem); font-weight: 500; line-height: 1.1; }
+.dishCard > p { margin: 0; color: #76695f; font-size: .78rem; line-height: 1.7; }
+.menuNote { margin: 2.5rem 0 0; color: #88796d; font-size: .68rem; font-style: italic; }
+.philosophy { display: grid; min-height: 780px; grid-template-columns: 1fr 1fr; background: var(--color-burgundy-deep); color: var(--color-ivory); }
+.philosophyImage { position: relative; min-height: 650px; overflow: hidden; }
+.philosophyImage img { object-fit: cover; object-position: center; transform: scale(1.12); }
+.philosophyImage::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(20,8,8,.45), transparent 45%); content: ""; }
+.philosophyImageLabel { position: absolute; z-index: 1; bottom: 2rem; left: 2rem; color: white; font-size: .58rem; letter-spacing: .17em; }
+.philosophyContent { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 6rem clamp(2.5rem,7vw,7rem); }
+.philosophyContent .eyebrow { color: var(--color-orange-light); }
+.philosophyContent h2 { margin: 2.5rem 0; font-size: clamp(4.5rem,7vw,7.6rem); }
+.philosophyContent h2 em { color: var(--color-orange-light); font-weight: 400; }
+.philosophyBody { max-width: 420px; }
+.philosophyBody p { color: rgba(244,239,230,.7); font-size: .83rem; line-height: 1.9; }
+.lightTextLink { margin-top: 1rem; padding-bottom: .5rem; border-bottom: 1px solid rgba(244,239,230,.55); }
+.philosophyIndex { position: absolute; right: 2rem; bottom: 2rem; color: rgba(244,239,230,.45); font-size: .56rem; letter-spacing: .15em; }
+.experience { padding: 7.5rem 0 5rem; overflow: hidden; }
+.experienceHeader { display: flex; align-items: end; justify-content: space-between; gap: 3rem; padding: 0 max(1.5rem, calc((100vw - 1320px)/2)); margin-bottom: 3.5rem; }
+.experienceHeader h2 { margin: 1.4rem 0 0; font-size: clamp(3.5rem,6.5vw,6.8rem); }
+.experienceHeader > p { max-width: 330px; margin: 0 0 .5rem; color: #75685e; font-size: .83rem; line-height: 1.85; }
+.momentsTrack { display: flex; gap: 1.5rem; overflow-x: auto; padding: 0 max(1.5rem, calc((100vw - 1320px)/2)) 1.5rem; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--color-orange) transparent; }
+.momentCard { flex: 0 0 min(44vw,560px); scroll-snap-align: start; }
+.momentImage { position: relative; aspect-ratio: 1.28; overflow: hidden; background: var(--color-sand); }
+.momentImage img { object-fit: cover; }
+.momentCard:hover .momentImage img { transform: scale(1.04); }
+.momentImage > span { position: absolute; top: 1rem; left: 1rem; color: white; font-size: .65rem; letter-spacing: .14em; }
+.momentText { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; padding-top: 1.2rem; }
+.momentText h3 { flex: 0 0 auto; margin: 0; font-family: var(--font-display), Georgia, serif; font-size: 2rem; font-weight: 500; }
+.momentText p { max-width: 260px; margin: 0; color: #75685e; font-size: .73rem; line-height: 1.7; }
+.trackHint { display: flex; justify-content: space-between; padding: 1.5rem max(1.5rem, calc((100vw - 1320px)/2)) 0; color: var(--color-muted); font-size: .56rem; letter-spacing: .16em; }
+.trackHint span:last-child { display: inline-flex; align-items: center; gap: .5rem; }
+.reservation { position: relative; display: flex; min-height: 690px; align-items: center; overflow: hidden; background: #251311; color: var(--color-ivory); }
+.reservationImage, .reservationOverlay { position: absolute; inset: 0; }
+.reservationImage img { object-fit: cover; object-position: center 55%; }
+.reservationOverlay { background: linear-gradient(90deg, rgba(25,11,10,.91), rgba(25,11,10,.53) 55%, rgba(25,11,10,.18)); }
+.reservationContent { position: relative; z-index: 1; width: min(100% - 3rem,1320px); margin: 0 auto; padding: 7rem 0; }
+.reservationEyebrow { margin-bottom: 2rem; }
+.reservationContent h2 { margin: 0; font-size: clamp(5rem,9vw,9rem); }
+.reservationContent h2 em { color: var(--color-orange-light); font-weight: 400; }
+.reservationContent > p:not(.reservationEyebrow) { margin: 2rem 0; color: rgba(244,239,230,.76); font-size: .9rem; }
+.reservationNumber { position: absolute; right: 2rem; bottom: 2rem; color: rgba(244,239,230,.58); font-size: .56rem; letter-spacing: .16em; }
+.closingNote { display: grid; min-height: 125px; place-items: center; padding: 2rem 1rem; background: var(--color-orange); color: var(--color-ink); text-align: center; }
+.closingNote p { margin: 0; font-size: .68rem; font-weight: 700; letter-spacing: .2em; }
+.closingNote span { padding-inline: .7rem; color: var(--color-burgundy); }
+@media (max-width: 900px) {
+  .introGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .introCopy { max-width: 550px; }
+  .philosophy { grid-template-columns: 1fr; }
+  .philosophyImage { min-height: 520px; }
+  .philosophyContent { min-height: 650px; padding: 5rem 2rem; }
+  .experienceHeader { align-items: flex-start; flex-direction: column; gap: 1.5rem; }
+  .experienceHeader > p { max-width: 520px; }
+}
+@media (max-width: 700px) {
+  .hero { min-height: 790px; min-height: 100svh; }
+  .heroImage img { object-position: 60% center; }
+  .heroShade { background: linear-gradient(90deg, rgba(20,10,10,.76), rgba(20,10,10,.28)), linear-gradient(0deg, rgba(20,10,10,.72), transparent 70%); }
+  .heroContent { width: calc(100% - 2.5rem); margin-top: 4rem; }
+  .heroTitle { font-size: clamp(5.2rem,18vw,8rem); }
+  .heroDescription { max-width: 310px; font-size: .84rem; }
+  .heroBottom { right: 1.25rem; left: 1.25rem; }
+  .heroBottom span:first-child, .heroBottom span:last-child, .heroVertical { display: none; }
+  .intro, .signature { padding: 5rem 1.25rem; }
+  .introGrid { padding: 3rem 0; }
+  .introHeading h2 { font-size: clamp(4rem,14vw,6rem); }
+  .introImageWrap { height: 420px; }
+  .imageCaption { right: .8rem; left: .8rem; font-size: .48rem; }
+  .signatureHeader { align-items: flex-start; flex-direction: column; gap: 1.5rem; }
+  .signatureHeader h2 { font-size: 5rem; }
+  .dishGrid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .dishImage { aspect-ratio: 1.08; }
+  .dishCard h3 { font-size: 2rem; }
+  .philosophyImage { min-height: 420px; }
+  .philosophyContent { min-height: 660px; padding: 5rem 1.5rem; }
+  .philosophyContent h2 { font-size: clamp(4.5rem,16vw,6.5rem); }
+  .experience { padding: 5rem 0 3rem; }
+  .experienceHeader { padding-inline: 1.25rem; margin-bottom: 2rem; }
+  .experienceHeader h2 { font-size: clamp(3.6rem,12vw,5rem); }
+  .momentsTrack { gap: 1rem; padding-inline: 1.25rem; }
+  .momentCard { flex-basis: 84vw; }
+  .momentText { align-items: flex-start; flex-direction: column; gap: .4rem; }
+  .momentText h3 { font-size: 1.8rem; }
+  .momentText p { max-width: 100%; }
+  .trackHint { padding-inline: 1.25rem; }
+  .reservation { min-height: 650px; }
+  .reservationContent { width: calc(100% - 2.5rem); padding: 6rem 0; }
+  .reservationContent h2 { font-size: clamp(4.8rem,16vw,7rem); }
+  .closingNote { min-height: 105px; }
+  .closingNote p { max-width: 290px; font-size: .59rem; line-height: 1.9; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dishImage img, .momentImage img, .dishArrow, .lightButton { transition: none; }
+}
