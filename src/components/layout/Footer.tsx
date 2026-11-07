@@ -53,6 +53,19 @@ export default function Footer() {
         <span>© {CURRENT_YEAR} MAISON NOIR. ALL RIGHTS RESERVED.</span>
         <span>MADE FOR MEMORABLE MOMENTS.</span>
       </div>
+
+      <div className={styles.credit}>
+        <span>
+          Website by{" "}
+          <a
+            href="https://saane.online"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Saane Technology
+          </a>
+        </span>
+      </div>
     </footer>
   );
 }

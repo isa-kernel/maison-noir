@@ -27,10 +27,10 @@ export default function ContactPage() {
             <p className="eyebrow">GET IN TOUCH</p><h2 className="display-heading">The details<br />matter. <em>So do you.</em></h2>
             <p className={styles.copy}>We are preparing our official contact details for this prototype. The information below is intentionally marked as unconfirmed until the restaurant supplies its real details.</p>
             <div className={styles.infoList}>
-              <div><MapPin /><span><strong>Visit</strong><small>Restaurant address to be confirmed · Kenya</small></span></div>
-              <div><Phone /><span><strong>Call</strong><small>Official phone number to be confirmed</small></span></div>
-              <div><Mail /><span><strong>Email</strong><small>Official email address to be confirmed</small></span></div>
-              <div><Clock3 /><span><strong>Opening hours</strong><small>Operating hours to be confirmed</small></span></div>
+              <div><MapPin /><span><strong>Visit</strong><small>Restaurant address to be confirme · Kenya</small></span></div>
+              <div><Phone /><span><strong>Call</strong><small>0117423315</small></span></div>
+              <div><Mail /><span><strong>Email</strong><small>felixmburu03@gmail.com</small></span></div>
+              <div><Clock3 /><span><strong>Opening hours</strong><small>8.00 AM - 10.00 PM</small></span></div>
             </div>
             <Link className={styles.reservationLink} href="/reservations">Looking for a table? Make a reservation <ArrowUpRight size={17} /></Link>
           </div>
