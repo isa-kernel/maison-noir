@@ -1,0 +1,56 @@
+.storyPage { background: var(--color-ivory); }
+.storyHero { position: relative; display: flex; min-height: min(790px, 88svh); align-items: center; overflow: hidden; background: #241310; color: var(--color-ivory); }
+.heroImage, .heroShade { position: absolute; inset: 0; }
+.heroImage img { object-fit: cover; object-position: center 55%; }
+.heroShade { background: linear-gradient(90deg, rgba(20,9,8,.87), rgba(20,9,8,.46) 58%, rgba(20,9,8,.12)); }
+.heroContent { position: relative; z-index: 1; width: min(100% - 3rem, 1320px); margin: 0 auto; padding: 9rem 0 7rem; }
+.heroEyebrow { margin: 0; color: var(--color-orange-light); font-size: .64rem; font-weight: 700; letter-spacing: .2em; }
+.heroContent h1 { max-width: 1050px; margin: 2rem 0; font-size: clamp(5rem, 10vw, 10rem); }
+.heroContent h1 em { color: var(--color-orange-light); font-weight: 400; }
+.heroContent > p:last-child { max-width: 430px; color: rgba(244,239,230,.75); font-size: .9rem; line-height: 1.9; }
+.heroIndex { position: absolute; z-index: 1; right: 2rem; bottom: 2rem; color: rgba(255,255,255,.68); font-size: .58rem; letter-spacing: .16em; }
+.manifesto { padding: 8rem max(1.5rem, calc((100vw - 1320px)/2)) 8rem; }
+.manifestoGrid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 5rem; margin-top: 3rem; }
+.manifestoGrid h2 { margin: 0; font-size: clamp(5rem, 9vw, 9rem); }
+.manifestoGrid h2 em, .sectionHeading h2 em, .principlesHeading h2 em { color: var(--color-burgundy); font-weight: 400; }
+.manifestoGrid > div { max-width: 470px; padding-bottom: .8rem; }
+.manifestoGrid > div p { color: #75695f; font-size: .88rem; line-height: 1.95; }
+.chapters { padding: 7rem max(1.5rem, calc((100vw - 1320px)/2)); background: #e9dfd2; }
+.sectionHeading { display: flex; align-items: end; justify-content: space-between; gap: 3rem; margin-bottom: 5rem; }
+.sectionHeading h2 { margin: 1.5rem 0 0; font-size: clamp(4.5rem, 8vw, 8rem); }
+.chapterList { display: grid; gap: 6rem; }
+.chapter { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 6vw, 7rem); }
+.chapter:nth-child(even) .chapterImage { order: 2; }
+.chapterImage { position: relative; min-height: 520px; aspect-ratio: .98; overflow: hidden; background: var(--color-sand); }
+.chapterImage img { object-fit: cover; }
+.chapterText { max-width: 480px; }
+.chapterMeta { display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid rgba(33,16,15,.2); color: var(--color-burgundy); font-size: .58rem; font-weight: 700; letter-spacing: .15em; }
+.chapterText h3 { margin: 2rem 0 1.2rem; font-size: clamp(3.5rem, 6vw, 6rem); }
+.chapterText p { max-width: 400px; color: #75695f; font-size: .86rem; line-height: 1.95; }
+.quoteSection { position: relative; display: grid; min-height: 650px; place-items: center; overflow: hidden; background: #21100f; color: var(--color-ivory); text-align: center; }
+.quoteImage, .quoteShade { position: absolute; inset: 0; }
+.quoteImage img { object-fit: cover; }
+.quoteShade { background: rgba(25,10,10,.72); }
+.quoteSection blockquote { position: relative; z-index: 1; max-width: 950px; margin: 0; padding: 5rem 1.5rem; }
+.quoteSection blockquote > span { color: var(--color-orange-light); font-family: var(--font-display), Georgia, serif; font-size: 7rem; line-height: .7; }
+.quoteSection blockquote p { margin: 1rem 0 2rem; font-family: var(--font-display), Georgia, serif; font-size: clamp(3.5rem, 8vw, 7.5rem); line-height: .98; }
+.quoteSection cite { color: rgba(244,239,230,.7); font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .2em; }
+.principles { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5rem; padding: 8rem max(1.5rem, calc((100vw - 1320px)/2)); }
+.principlesHeading h2 { margin: 1.5rem 0 0; font-size: clamp(4.5rem, 7vw, 7rem); }
+.principleList { border-top: 1px solid var(--color-line); }
+.principle { display: grid; grid-template-columns: 42px 1fr 20px; align-items: start; gap: 1rem; padding: 1.8rem 0; border-bottom: 1px solid var(--color-line); }
+.principle > span { padding-top: .35rem; color: var(--color-burgundy); font-size: .6rem; font-weight: 700; }
+.principle h3 { margin: 0; font-family: var(--font-display), Georgia, serif; font-size: 2rem; font-weight: 500; }
+.principle p { max-width: 500px; margin: .55rem 0 0; color: #75695f; font-size: .78rem; line-height: 1.8; }
+.principle > svg { margin-top: .4rem; color: var(--color-burgundy); }
+.storyClosing { position: relative; display: flex; min-height: 700px; align-items: center; overflow: hidden; background: #21100f; color: var(--color-ivory); }
+.closingImage, .closingShade { position: absolute; inset: 0; }
+.closingImage img { object-fit: cover; object-position: center 55%; }
+.closingShade { background: linear-gradient(90deg, rgba(20,9,8,.9), rgba(20,9,8,.5) 58%, rgba(20,9,8,.15)); }
+.closingContent { position: relative; z-index: 1; width: min(100% - 3rem, 1320px); margin: 0 auto; padding: 7rem 0; }
+.closingContent h2 { margin: 2rem 0; font-size: clamp(5rem, 9vw, 9rem); }
+.closingContent h2 em { color: var(--color-orange-light); font-weight: 400; }
+.closingContent > p:not(.heroEyebrow) { color: rgba(244,239,230,.76); font-size: .9rem; }
+.closingLink { display: inline-flex; align-items: center; gap: .7rem; margin-top: 1.5rem; padding: 1rem 1.3rem; background: var(--color-ivory); color: var(--color-ink); font-size: .72rem; font-weight: 700; }
+@media (max-width: 900px) { .manifestoGrid { grid-template-columns: 1fr; gap: 2rem; } .chapter { gap: 2rem; } .chapterImage { min-height: 420px; } .principles { grid-template-columns: 1fr; gap: 3rem; } }
+@media (max-width: 700px) { .storyHero { min-height: 760px; min-height: 90svh; } .heroContent { width: calc(100% - 2.5rem); padding: 8rem 0 6rem; } .heroContent h1 { font-size: clamp(4.5rem, 16vw, 7rem); } .heroShade { background: linear-gradient(90deg, rgba(20,9,8,.8), rgba(20,9,8,.25)), linear-gradient(0deg, rgba(20,9,8,.48), transparent 70%); } .heroIndex { right: 1.25rem; bottom: 1.25rem; } .manifesto { padding: 5rem 1.25rem; } .manifestoGrid { margin-top: 2rem; } .manifestoGrid h2 { font-size: clamp(4.5rem, 16vw, 6.5rem); } .chapters { padding: 5rem 1.25rem; } .sectionHeading { align-items: flex-start; flex-direction: column; margin-bottom: 3rem; } .sectionHeading h2 { font-size: 5rem; } .chapterList { gap: 4rem; } .chapter { grid-template-columns: 1fr; gap: 1.5rem; } .chapter:nth-child(even) .chapterImage { order: initial; } .chapterImage { min-height: auto; aspect-ratio: 1.1; } .chapterText h3 { margin: 1.4rem 0 .8rem; font-size: 3.8rem; } .quoteSection { min-height: 520px; } .quoteSection blockquote p { font-size: clamp(3.5rem, 13vw, 5rem); } .principles { grid-template-columns: 1fr; gap: 2.5rem; padding: 5rem 1.25rem; } .principlesHeading h2 { font-size: 4.8rem; } .principle { grid-template-columns: 30px 1fr 18px; gap: .7rem; } .principle h3 { font-size: 1.8rem; } .storyClosing { min-height: 650px; } .closingContent { width: calc(100% - 2.5rem); padding: 6rem 0; } .closingContent h2 { font-size: clamp(4.8rem, 16vw, 7rem); } }

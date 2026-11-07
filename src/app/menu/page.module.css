@@ -1,0 +1,22 @@
+.menuPage { background: var(--color-ivory); }
+.menuHero { position: relative; display: flex; min-height: min(760px, 82svh); align-items: center; overflow: hidden; background: #241310; color: var(--color-ivory); }
+.heroImage, .heroShade { position: absolute; inset: 0; }
+.heroImage img { object-fit: cover; object-position: center 55%; }
+.heroShade { background: linear-gradient(90deg, rgba(22,10,9,.88), rgba(22,10,9,.52) 55%, rgba(22,10,9,.12)); }
+.heroContent { position: relative; z-index: 1; width: min(100% - 3rem, 1320px); margin: 0 auto; padding: 9rem 0 7rem; }
+.eyebrow { color: var(--color-orange-light); font-size: .65rem; font-weight: 700; letter-spacing: .2em; }
+.heroContent h1 { max-width: 950px; margin: 2rem 0; font-size: clamp(5rem, 10vw, 10rem); }
+.heroContent h1 em { color: var(--color-orange-light); font-weight: 400; }
+.heroContent > p:last-child { max-width: 410px; color: rgba(244,239,230,.76); font-size: .9rem; line-height: 1.9; }
+.heroIndex { position: absolute; z-index: 1; right: 2rem; bottom: 2rem; color: rgba(255,255,255,.7); font-size: .58rem; letter-spacing: .16em; }
+.menuIntro { display: grid; grid-template-columns: .7fr 1.3fr; gap: 4rem; width: min(100% - 3rem, 1320px); margin: 0 auto; padding: 7rem 0 5rem; }
+.menuIntro > .eyebrow { padding-top: .8rem; }
+.menuIntro > div { display: grid; grid-template-columns: 1fr .75fr; align-items: end; gap: 3rem; }
+.menuIntro h2 { margin: 0; font-size: clamp(4rem, 7vw, 7rem); }
+.menuIntro h2 em { color: var(--color-burgundy); font-weight: 400; }
+.menuIntro > div > p { max-width: 330px; margin: 0 0 .5rem; color: #75695f; font-size: .83rem; line-height: 1.9; }
+.menuFootnote { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 2rem max(1.5rem, calc((100vw - 1320px)/2)); background: #e9dfd2; }
+.menuFootnote p { max-width: 700px; margin: 0; color: #75695f; font-size: .65rem; line-height: 1.7; }
+.menuFootnote a { display: inline-flex; flex: 0 0 auto; align-items: center; gap: .6rem; padding-bottom: .4rem; border-bottom: 1px solid var(--color-burgundy); color: var(--color-burgundy); font-size: .7rem; }
+@media (max-width: 900px) { .menuIntro { grid-template-columns: 1fr; gap: 2rem; } }
+@media (max-width: 700px) { .menuHero { min-height: 720px; min-height: 88svh; } .heroContent { width: calc(100% - 2.5rem); padding: 8rem 0 6rem; } .heroContent h1 { font-size: clamp(4.5rem, 17vw, 7rem); } .heroShade { background: linear-gradient(90deg, rgba(22,10,9,.8), rgba(22,10,9,.3)), linear-gradient(0deg, rgba(22,10,9,.45), transparent 75%); } .heroIndex { right: 1.25rem; bottom: 1.25rem; } .menuIntro { width: calc(100% - 2.5rem); padding: 5rem 0 3rem; } .menuIntro > div { grid-template-columns: 1fr; gap: 1.5rem; } .menuIntro h2 { font-size: clamp(4rem, 15vw, 6rem); } .menuFootnote { align-items: flex-start; flex-direction: column; padding: 2rem 1.25rem; } }
