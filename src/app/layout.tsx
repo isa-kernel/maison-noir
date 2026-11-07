@@ -8,7 +8,7 @@ import "@/styles/tokens.css";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.maisonnoir.vercel.app"), // Replace with your actual domain
+  metadataBase: new URL("https://www.maisonoir.vercel.app"), // Replace with your actual domain
 
   title: {
     default: "Maison Noir | Fine Dining & Memorable Experiences",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Maison Noir | Fine Dining & Memorable Experiences",
     description:
       "Exceptional cuisine, elegant surroundings, and memorable dining experiences at Maison Noir.",
-    url: "https://www.maisonnoir.vercel.app",
+    url: "https://www.maisonoir.vercel.app",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -87,7 +87,7 @@ const bodyFont = DM_Sans({
 });
 
 // export const metadata: Metadata = {
-//   metadataBase: new URL("https://maisonnoir.example"),
+//   metadataBase: new URL("https://maisonoir.example"),
 //   title: {
 //     default: "MAISON NOIR — A Table Beyond the Ordinary",
 //     template: "%s | MAISON NOIR",
